@@ -1,5 +1,5 @@
 #Should be run from 'ubuntu' account and root privileges should be given to ubuntu in visudo
-
+# Require atlest 8 GB VM to run the first magnum bay. (After running 1 node Bay - 1 master and 1 minion, only 200 MB memory left.)
 sudo apt-get update
 sudo apt-get install git libffi-dev libssl-dev -y || sudo yum install -y git libffi-dev libssl-dev
 cd ~

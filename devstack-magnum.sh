@@ -133,6 +133,8 @@ git clone https://git.openstack.org/openstack/python-magnumclient
 cd python-magnumclient
 sudo pip install -e .
 magnum-db-manage upgrade
+cd /opt/stack/devstack/
+source openrc admin admin
 keystone service-create --name=magnum \
                         --type=container \
                         --description="magnum Container Service"
